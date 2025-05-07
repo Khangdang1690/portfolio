@@ -1,10 +1,13 @@
+import { Suspense } from "react";
 import { MainNav } from "./MainNav";
 import { PageTransition } from "../ui/PageTransition";
 
 export function MainLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex min-h-screen flex-col">
-      <PageTransition />
+      <Suspense fallback={null}>
+        <PageTransition />
+      </Suspense>
       <header className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 border-b border-border">
         <MainNav />
       </header>

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 
-export function PageTransition() {
+export function PageTransitionContent() {
   const [isNavigating, setIsNavigating] = useState(false);
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -34,4 +34,10 @@ export function PageTransition() {
       <div className="h-full bg-primary animate-[progressBar_2s_ease-in-out_infinite]"></div>
     </div>
   );
+}
+
+// Create a wrapper component that will be imported elsewhere
+export function PageTransition() {
+  // Just return null for the fallback since this is just a visual indicator
+  return <PageTransitionContent />;
 } 
