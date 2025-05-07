@@ -28,7 +28,7 @@ export default function AboutPage() {
               <div className="space-y-4">
                 <h2 className="text-xl font-semibold border-b border-primary pb-2">Background</h2>
                 <p className="text-muted-foreground">
-                  I'm a sophomore at the University of South Florida pursuing a B.S. in Computer Science with a strong GPA of 3.93. I'm a recipient of the USF Green & Gold Presidential Award.
+                  I&apos;m a sophomore at the University of South Florida pursuing a B.S. in Computer Science with a strong GPA of 3.93. I&apos;m a recipient of the USF Green &amp; Gold Presidential Award.
                 </p>
               </div>
             </AnimatedSection>
@@ -44,7 +44,7 @@ export default function AboutPage() {
               <div className="space-y-4">
                 <h2 className="text-xl font-semibold border-b border-primary pb-2">Goals</h2>
                 <p className="text-muted-foreground">
-                  I aim to become a software engineer specializing in backend and cloud infrastructure. I'm continuously learning and applying new technologies to enhance my skills.
+                  I aim to become a software engineer specializing in backend and cloud infrastructure. I&apos;m continuously learning and applying new technologies to enhance my skills.
                 </p>
               </div>
             </AnimatedSection>
@@ -54,13 +54,13 @@ export default function AboutPage() {
             <div className="space-y-6 mb-12">
               <h2 className="text-2xl font-bold">My Journey</h2>
               <p className="text-muted-foreground">
-                I began my programming journey by exploring different technologies and platforms. Through coursework in Data Structures & Algorithms, Programming, and Discrete Structures, I've built a strong foundation in computer science principles.
+                I began my programming journey by exploring different technologies and platforms. Through coursework in Data Structures &amp; Algorithms, Programming, and Discrete Structures, I&apos;ve built a strong foundation in computer science principles.
               </p>
               <p className="text-muted-foreground">
-                My professional experience includes working as a Software Engineer at Finbud AI, where I migrated from Node.js to NestJS, improving code maintainability and reducing API response times. I've also worked at the LAM²P Laboratory and Wisdom Robotics, where I built data extraction pipelines and RESTful APIs.
+                My professional experience includes working as a Software Engineer at Finbud AI, where I migrated from Node.js to NestJS, improving code maintainability and reducing API response times. I&apos;ve also worked at the LAM²P Laboratory and Wisdom Robotics, where I built data extraction pipelines and RESTful APIs.
               </p>
               <p className="text-muted-foreground">
-                I've participated in hackathons, winning at HackUSF and the Nosu AI Hackathon. These experiences have strengthened my problem-solving abilities and collaborative skills.
+                I&apos;ve participated in hackathons, winning at HackUSF and the Nosu AI Hackathon. These experiences have strengthened my problem-solving abilities and collaborative skills.
               </p>
             </div>
           </AnimatedSection>
@@ -78,7 +78,7 @@ export default function AboutPage() {
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2">
                   <li className="flex items-center gap-2 hover:text-primary transition-colors">
                     <div className="h-2 w-2 rounded-full bg-primary"></div>
-                    <span className="text-muted-foreground">Data Structures & Algorithms</span>
+                    <span className="text-muted-foreground">Data Structures &amp; Algorithms</span>
                   </li>
                   <li className="flex items-center gap-2 hover:text-primary transition-colors">
                     <div className="h-2 w-2 rounded-full bg-primary"></div>

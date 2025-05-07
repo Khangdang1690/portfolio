@@ -2,7 +2,6 @@ import { MainLayout } from "@/components/layout/MainLayout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
-import Link from "next/link";
 import { AnimatedText } from "@/components/ui/AnimatedText";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { AnimatedBackground } from "@/components/ui/AnimatedBackground";

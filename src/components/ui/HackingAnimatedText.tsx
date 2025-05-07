@@ -82,6 +82,9 @@ export function HackingAnimatedText({
   };
 
   useEffect(() => {
+    // Create a ref copy for cleanup to avoid the React hooks warning
+    const timersRef = animationTimersRef;
+    
     // Create matrix-style scanning effect
     const runAnimationCycle = () => {
       // Set intensity multipliers
@@ -119,7 +122,7 @@ export function HackingAnimatedText({
         }));
         
         // Clear after short time
-        animationTimersRef.current.push(
+        timersRef.current.push(
           setTimeout(() => {
             setEffects(prev => ({
               ...prev,
@@ -145,7 +148,7 @@ export function HackingAnimatedText({
         });
         
         // Clear after short time
-        animationTimersRef.current.push(
+        timersRef.current.push(
           setTimeout(() => {
             setEffects(prev => {
               const newGlitchWords = [...prev.glitchWords];
@@ -163,7 +166,7 @@ export function HackingAnimatedText({
         
         // Start scan line 
         for (let i = 0; i < 10; i++) {
-          animationTimersRef.current.push(
+          timersRef.current.push(
             setTimeout(() => {
               setEffects(prev => ({ ...prev, scanLine: i }));
             }, i * 40 * effectIntensity)
@@ -171,7 +174,7 @@ export function HackingAnimatedText({
         }
         
         // Clear scan line
-        animationTimersRef.current.push(
+        timersRef.current.push(
           setTimeout(() => {
             setEffects(prev => ({ ...prev, scanLine: null }));
           }, 400 * effectIntensity)
@@ -183,7 +186,7 @@ export function HackingAnimatedText({
         setEffects(prev => ({ ...prev, noise: true }));
         
         // Clear after short time
-        animationTimersRef.current.push(
+        timersRef.current.push(
           setTimeout(() => {
             setEffects(prev => ({ ...prev, noise: false }));
           }, 200 * effectIntensity)
@@ -195,7 +198,7 @@ export function HackingAnimatedText({
         setEffects(prev => ({ ...prev, flicker: true }));
         
         // Clear after very short time
-        animationTimersRef.current.push(
+        timersRef.current.push(
           setTimeout(() => {
             setEffects(prev => ({ ...prev, flicker: false }));
           }, 50 * effectIntensity)
@@ -203,11 +206,11 @@ export function HackingAnimatedText({
         
         // Sometimes do double flicker
         if (Math.random() > 0.6) {
-          animationTimersRef.current.push(
+          timersRef.current.push(
             setTimeout(() => {
               setEffects(prev => ({ ...prev, flicker: true }));
               
-              animationTimersRef.current.push(
+              timersRef.current.push(
                 setTimeout(() => {
                   setEffects(prev => ({ ...prev, flicker: false }));
                 }, 50 * effectIntensity)
@@ -239,7 +242,7 @@ export function HackingAnimatedText({
         }));
         
         // Quickly return to original character
-        animationTimersRef.current.push(
+        timersRef.current.push(
           setTimeout(() => {
             setEffects(prev => ({
               ...prev,
@@ -252,7 +255,7 @@ export function HackingAnimatedText({
             // Sometimes do rapid flickering between characters
             if (Math.random() > 0.7) {
               for (let i = 0; i < 3; i++) {
-                animationTimersRef.current.push(
+                timersRef.current.push(
                   setTimeout(() => {
                     setEffects(prev => ({
                       ...prev,
@@ -267,7 +270,7 @@ export function HackingAnimatedText({
             }
             
             // Finally clear the effect
-            animationTimersRef.current.push(
+            timersRef.current.push(
               setTimeout(() => {
                 setEffects(prev => {
                   const newScrambled = { ...prev.scrambledChars };
@@ -285,7 +288,7 @@ export function HackingAnimatedText({
         setEffects(prev => ({ ...prev, digitalArtifacts: true }));
         
         // Clear after short time
-        animationTimersRef.current.push(
+        timersRef.current.push(
           setTimeout(() => {
             setEffects(prev => ({ ...prev, digitalArtifacts: false }));
           }, 120 * effectIntensity)
@@ -297,7 +300,7 @@ export function HackingAnimatedText({
         setEffects(prev => ({ ...prev, glitchOffset: true }));
         
         // Clear after short time
-        animationTimersRef.current.push(
+        timersRef.current.push(
           setTimeout(() => {
             setEffects(prev => ({ ...prev, glitchOffset: false }));
           }, 100 * effectIntensity)
@@ -316,7 +319,7 @@ export function HackingAnimatedText({
         setEffects(prev => ({ ...prev, matrixEffect: wordIdx }));
         
         // Clear after short time
-        animationTimersRef.current.push(
+        timersRef.current.push(
           setTimeout(() => {
             setEffects(prev => ({ ...prev, matrixEffect: null }));
           }, 600 * effectIntensity)
@@ -342,7 +345,7 @@ export function HackingAnimatedText({
         }));
         
         // Clear after a short time
-        animationTimersRef.current.push(
+        timersRef.current.push(
           setTimeout(() => {
             setEffects(prev => ({
               ...prev,
@@ -357,7 +360,7 @@ export function HackingAnimatedText({
         const delay = Math.random() * duration;
         const effectType = Math.floor(Math.random() * 10); // Changed from 9 to 10
         
-        animationTimersRef.current.push(
+        timersRef.current.push(
           setTimeout(() => {
             switch (effectType) {
               case 0: randomCharHighlight(); break;
@@ -376,7 +379,7 @@ export function HackingAnimatedText({
       }
       
       // Schedule next animation cycle
-      animationTimersRef.current.push(
+      timersRef.current.push(
         setTimeout(() => {
           runAnimationCycle();
         }, duration)
@@ -388,7 +391,7 @@ export function HackingAnimatedText({
     
     // Cleanup all timers on unmount
     return () => {
-      animationTimersRef.current.forEach(timer => {
+      timersRef.current.forEach(timer => {
         clearTimeout(timer);
       });
     };

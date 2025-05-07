@@ -31,7 +31,7 @@ export default function ContactPage() {
                 <CardHeader>
                   <CardTitle className="text-2xl">Contact Form</CardTitle>
                   <CardDescription>
-                    Send me a message and I'll get back to you as soon as possible.
+                    Send me a message and I&apos;ll get back to you as soon as possible.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -177,7 +177,7 @@ export default function ContactPage() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground">
-                      I'm currently open to:
+                      I&apos;m currently open to:
                     </p>
                     <ul className="mt-2 space-y-2">
                       <li className="flex items-start gap-2 group">
