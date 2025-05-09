@@ -18,7 +18,7 @@ export default function Home() {
           {/* Left Content Area */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left gap-3 sm:gap-4 md:gap-6 w-full">
             <HackingAnimatedText 
-              text="Khang Dang"
+              text="Kaizer Dang"
               className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mt-4 md:mt-0"
             />
             <AnimatedText 
@@ -71,7 +71,7 @@ export default function Home() {
                   <span className="sr-only">LinkedIn</span>
                 </a>
                 <a 
-                  href="mailto:khangdang0199@gmail.com" 
+                  href="mailto:kaizerdang.work@gmail.com" 
                   className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
                 >
                   <Mail className="h-5 w-5 sm:h-6 sm:w-6" />
@@ -88,7 +88,7 @@ export default function Home() {
                 <Avatar className="size-32 sm:size-40 md:size-56 lg:size-64 border-2 border-primary/30 shadow-lg shadow-primary/10 overflow-hidden">
                   <AvatarImage 
                     src="/Khang.png" 
-                    alt="Khang Dang" 
+                    alt="Kaizer Dang" 
                     className="object-cover" 
                   />
                   <AvatarFallback className="text-3xl sm:text-4xl md:text-5xl font-bold bg-secondary text-primary">KD</AvatarFallback>

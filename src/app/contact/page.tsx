@@ -1,12 +1,10 @@
 import { MainLayout } from "@/components/layout/MainLayout";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Github, Linkedin, Mail, Phone } from "lucide-react";
 import { AnimatedText } from "@/components/ui/AnimatedText";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
+import { ContactForm } from "@/components/ContactForm";
 
 export default function ContactPage() {
   return (
@@ -35,60 +33,7 @@ export default function ContactPage() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <form className="space-y-6">
-                    <div className="space-y-2">
-                      <label htmlFor="name" className="text-sm font-medium">
-                        Name
-                      </label>
-                      <Input
-                        id="name"
-                        placeholder="Your name"
-                        className="bg-secondary/50 focus:border-primary/50"
-                      />
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <label htmlFor="email" className="text-sm font-medium">
-                        Email
-                      </label>
-                      <Input
-                        id="email"
-                        type="email"
-                        placeholder="Your email address"
-                        className="bg-secondary/50 focus:border-primary/50"
-                      />
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <label htmlFor="subject" className="text-sm font-medium">
-                        Subject
-                      </label>
-                      <Input
-                        id="subject"
-                        placeholder="What is this regarding?"
-                        className="bg-secondary/50 focus:border-primary/50"
-                      />
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <label htmlFor="message" className="text-sm font-medium">
-                        Message
-                      </label>
-                      <Textarea
-                        id="message"
-                        placeholder="Your message"
-                        className="min-h-[150px] bg-secondary/50 focus:border-primary/50"
-                      />
-                    </div>
-                    
-                    <Button type="submit" className="w-full group">
-                      <span className="group-hover:translate-x-0.5 transition-transform">Send Message</span>
-                    </Button>
-                    
-                    <p className="text-xs text-muted-foreground text-center">
-                      This form is for demonstration purposes only. Please use the direct contact methods listed.
-                    </p>
-                  </form>
+                  <ContactForm />
                 </CardContent>
               </Card>
             </AnimatedSection>
@@ -110,10 +55,10 @@ export default function ContactPage() {
                       <div>
                         <h3 className="font-medium group-hover:text-primary transition-colors">Email</h3>
                         <a 
-                          href="mailto:khangdang0199@gmail.com" 
+                          href="mailto:kaizerdang.work@gmail.com" 
                           className="text-muted-foreground hover:text-primary transition-colors"
                         >
-                          khangdang0199@gmail.com
+                          kaizerdang.work@gmail.com
                         </a>
                       </div>
                     </div>

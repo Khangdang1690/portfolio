@@ -101,7 +101,7 @@ export function MainNav() {
   return (
     <div className="flex items-center justify-between py-3 sm:py-4">
       <Link href="/" className="flex items-center space-x-2">
-        <span className="text-lg sm:text-xl font-bold text-primary">Khang Dang</span>
+        <span className="text-lg sm:text-xl font-bold text-primary">Kaizer Dang</span>
       </Link>
       
       <Suspense fallback={<NavigationLinksFallback />}>
@@ -122,7 +122,7 @@ export function MainNav() {
               className="flex items-center space-x-2"
               onClick={() => setOpen(false)}
             >
-              <span className="text-xl font-bold text-primary">Khang Dang</span>
+              <span className="text-xl font-bold text-primary">Kaizer Dang</span>
             </Link>
             <Suspense fallback={<NavigationLinksFallback onLinkClick={() => setOpen(false)} />}>
               <NavigationLinks onLinkClick={() => setOpen(false)} />
