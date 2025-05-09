@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import nodemailer from "nodemailer";
+// Import will be used when email functionality is enabled
+// import nodemailer from "nodemailer";
 
 export async function POST(request: Request) {
   try {
@@ -12,16 +13,6 @@ export async function POST(request: Request) {
         { status: 400 }
       );
     }
-
-    // Create a Nodemailer transporter
-    const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        // These would normally be environment variables
-        user: process.env.EMAIL_USER || 'your-email@gmail.com',
-        pass: process.env.EMAIL_PASS || 'your-app-password'
-      }
-    });
 
     // Configure email data
     const mailOptions = {
@@ -48,11 +39,23 @@ export async function POST(request: Request) {
     };
 
     // For demonstration - log instead of actually sending
-    // In production, uncomment the line below and remove the log
     console.log("Would send email:", mailOptions);
     
-    // Uncomment to actually send the email
-    // await transporter.sendMail(mailOptions);
+    // Uncomment to set up email sending in production:
+    /*
+    // Uncomment this import at the top of the file when enabling email
+    // import nodemailer from "nodemailer";
+    
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: process.env.EMAIL_USER || 'your-email@gmail.com',
+        pass: process.env.EMAIL_PASS || 'your-app-password'
+      }
+    });
+    
+    await transporter.sendMail(mailOptions);
+    */
 
     return NextResponse.json(
       { message: "Your message has been sent successfully!" },
