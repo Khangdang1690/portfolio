@@ -39,7 +39,7 @@ function NavigationLinks({ onLinkClick }: { onLinkClick?: () => void }) {
         </NavigationMenu>
       </div>
       
-      <div className="flex md:hidden flex-col space-y-3">
+      <div className="flex md:hidden flex-col space-y-4">
         {navItems.map((item) => (
           <Link
             key={item.path}
@@ -49,7 +49,7 @@ function NavigationLinks({ onLinkClick }: { onLinkClick?: () => void }) {
               pathname === item.path
                 ? "text-primary font-medium"
                 : "text-muted-foreground"
-            } hover:text-primary transition-colors`}
+            } hover:text-primary transition-colors text-base`}
           >
             {item.name}
           </Link>
@@ -79,13 +79,13 @@ function NavigationLinksFallback({ onLinkClick }: { onLinkClick?: () => void }) 
         </NavigationMenu>
       </div>
       
-      <div className="flex md:hidden flex-col space-y-3">
+      <div className="flex md:hidden flex-col space-y-4">
         {navItems.map((item) => (
           <Link
             key={item.path}
             href={item.path}
             onClick={onLinkClick}
-            className="text-muted-foreground hover:text-primary transition-colors"
+            className="text-muted-foreground hover:text-primary transition-colors text-base"
           >
             {item.name}
           </Link>
@@ -99,9 +99,9 @@ export function MainNav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-between py-4">
+    <div className="flex items-center justify-between py-3 sm:py-4">
       <Link href="/" className="flex items-center space-x-2">
-        <span className="text-xl font-bold text-primary">Khang Dang</span>
+        <span className="text-lg sm:text-xl font-bold text-primary">Khang Dang</span>
       </Link>
       
       <Suspense fallback={<NavigationLinksFallback />}>
@@ -110,13 +110,13 @@ export function MainNav() {
       
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild className="md:hidden">
-          <Button variant="ghost" size="icon">
-            <Menu />
+          <Button variant="ghost" size="icon" className="h-8 w-8 sm:h-10 sm:w-10">
+            <Menu className="h-5 w-5 sm:h-6 sm:w-6" />
             <span className="sr-only">Toggle menu</span>
           </Button>
         </SheetTrigger>
-        <SheetContent side="right" className="bg-card">
-          <div className="flex flex-col space-y-4 py-4">
+        <SheetContent side="right" className="bg-card pt-10 w-[75vw] sm:w-[50vw] md:w-[350px]">
+          <div className="flex flex-col space-y-6 py-4">
             <Link
               href="/"
               className="flex items-center space-x-2"

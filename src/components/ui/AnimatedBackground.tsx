@@ -65,9 +65,19 @@ export function AnimatedBackground() {
       }
     }
 
-    // Create particle array - increase particle count
+    // Create particle array based on screen size
     const particlesArray: Particle[] = [];
-    const numberOfParticles = Math.min(Math.max(window.innerWidth / 8, 100), 180); // More particles
+    const isMobile = window.innerWidth < 768;
+    
+    // Reduce particle count on mobile for better performance
+    const baseParticleCount = isMobile ? 80 : 150;
+    const particleDensity = isMobile ? 12 : 8;
+    
+    const numberOfParticles = Math.min(
+      Math.max(window.innerWidth / particleDensity, baseParticleCount / 2), 
+      baseParticleCount
+    );
+    
     for (let i = 0; i < numberOfParticles; i++) {
       particlesArray.push(new Particle());
     }
@@ -88,7 +98,10 @@ export function AnimatedBackground() {
       requestAnimationFrame(animate);
     };
 
-    // Connect particles with lines if they're close enough - increased distance and opacity
+    // Connection distance based on screen size
+    const maxConnectionDistance = isMobile ? 80 : 120;
+    
+    // Connect particles with lines if they're close enough
     const connectParticles = () => {
       for (let a = 0; a < particlesArray.length; a++) {
         for (let b = a; b < particlesArray.length; b++) {
@@ -96,10 +109,10 @@ export function AnimatedBackground() {
           const dy = particlesArray[a].y - particlesArray[b].y;
           const distance = Math.sqrt(dx * dx + dy * dy);
           
-          if (distance < 120) { // Increased connection distance
-            // Increased opacity from 0.1 to 0.15
-            safeCtx.strokeStyle = `rgba(215, 38, 61, ${0.15 - distance/1000})`;
-            safeCtx.lineWidth = 0.6; // Thicker lines
+          if (distance < maxConnectionDistance) {
+            const opacity = isMobile ? 0.12 - distance/1000 : 0.15 - distance/1000;
+            safeCtx.strokeStyle = `rgba(215, 38, 61, ${opacity})`;
+            safeCtx.lineWidth = isMobile ? 0.5 : 0.6;
             safeCtx.beginPath();
             safeCtx.moveTo(particlesArray[a].x, particlesArray[a].y);
             safeCtx.lineTo(particlesArray[b].x, particlesArray[b].y);
@@ -119,7 +132,7 @@ export function AnimatedBackground() {
   return (
     <canvas
       ref={canvasRef}
-      className="absolute top-0 left-0 w-full h-full pointer-events-none z-[1]" // Ensure z-index is appropriate
+      className="absolute top-0 left-0 w-full h-full pointer-events-none z-[1]"
       aria-hidden="true"
     />
   );
