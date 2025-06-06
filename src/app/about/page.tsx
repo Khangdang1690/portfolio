@@ -28,7 +28,7 @@ export default function AboutPage() {
               <div className="space-y-4">
                 <h2 className="text-xl font-semibold border-b border-primary pb-2">Background</h2>
                 <p className="text-muted-foreground">
-                  I&apos;m a sophomore at the University of South Florida pursuing a B.S. in Computer Science with a strong GPA of 3.93. I&apos;m a recipient of the USF Green &amp; Gold Presidential Award.
+                  I&apos;m a sophomore at the University of South Florida pursuing a B.S. in Computer Science with a perfect GPA of 4.0. I&apos;m a recipient of the USF Green &amp; Gold Presidential Award.
                 </p>
               </div>
             </AnimatedSection>
@@ -36,7 +36,7 @@ export default function AboutPage() {
               <div className="space-y-4">
                 <h2 className="text-xl font-semibold border-b border-primary pb-2">Interests</h2>
                 <p className="text-muted-foreground">
-                  My passion lies in backend development, cloud technologies, and DevOps practices. I enjoy building scalable, efficient systems and optimizing development workflows.
+                  My passion lies in backend development, cloud technologies, DevOps practices, and AI/ML. I enjoy building scalable, efficient systems and contributing to open-source projects.
                 </p>
               </div>
             </AnimatedSection>
@@ -44,7 +44,7 @@ export default function AboutPage() {
               <div className="space-y-4">
                 <h2 className="text-xl font-semibold border-b border-primary pb-2">Goals</h2>
                 <p className="text-muted-foreground">
-                  I aim to become a software engineer specializing in backend and cloud infrastructure. I&apos;m continuously learning and applying new technologies to enhance my skills.
+                  I aim to become a software engineer specializing in backend and cloud infrastructure. I&apos;m continuously learning and applying new technologies, particularly in AI and machine learning domains.
                 </p>
               </div>
             </AnimatedSection>
@@ -54,13 +54,13 @@ export default function AboutPage() {
             <div className="space-y-6 mb-12">
               <h2 className="text-2xl font-bold">My Journey</h2>
               <p className="text-muted-foreground">
-                I began my programming journey by exploring different technologies and platforms. Through coursework in Data Structures &amp; Algorithms, Programming, and Discrete Structures, I&apos;ve built a strong foundation in computer science principles.
+                I began my programming journey by exploring different technologies and platforms. Through coursework in Object-Oriented Programming, Data Structures &amp; Algorithms, Program Design, and Intro to Programming, I&apos;ve built a strong foundation in computer science principles.
               </p>
               <p className="text-muted-foreground">
-                My professional experience includes working as a Software Engineer at Finbud AI, where I migrated from Node.js to NestJS, improving code maintainability and reducing API response times. I&apos;ve also worked at the LAM²P Laboratory and Wisdom Robotics, where I built data extraction pipelines and RESTful APIs.
+                My professional experience includes contributing to Agno, a popular open-source AI library with 27.3k GitHub stars, where I fixed critical API compatibility issues. I&apos;ve also worked as a Backend Lead at Finbud (Microsoft-sponsored), developed AI systems at LAM²P Laboratory, and built APIs at Wisdom Robotics.
               </p>
               <p className="text-muted-foreground">
-                I&apos;ve participated in hackathons, winning at HackUSF and the Nosu AI Hackathon. These experiences have strengthened my problem-solving abilities and collaborative skills.
+                I&apos;ve participated in multiple hackathons, winning the Nosu AI Hackathon ($325) with FoiceDetect and the Google Hackathon ($200) with SafeGuard. These experiences have strengthened my problem-solving abilities, collaborative skills, and passion for AI/ML applications.
               </p>
             </div>
           </AnimatedSection>
@@ -70,27 +70,28 @@ export default function AboutPage() {
               <h2 className="text-2xl font-bold mb-4">Education</h2>
               <div className="mb-4">
                 <h3 className="text-xl font-semibold">University of South Florida</h3>
-                <p className="text-muted-foreground">Bachelor of Computer Science</p>
-                <p className="text-muted-foreground">GPA: 3.93</p>
+                <p className="text-muted-foreground">Bachelor of Science in Computer Science</p>
+                <p className="text-muted-foreground">Expected May 2028</p>
+                <p className="text-muted-foreground">GPA: 4.0/4.0</p>
               </div>
               <div>
                 <h3 className="text-lg font-medium mb-2">Relevant Coursework</h3>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2">
                   <li className="flex items-center gap-2 hover:text-primary transition-colors">
                     <div className="h-2 w-2 rounded-full bg-primary"></div>
+                    <span className="text-muted-foreground">Object-Oriented Programming</span>
+                  </li>
+                  <li className="flex items-center gap-2 hover:text-primary transition-colors">
+                    <div className="h-2 w-2 rounded-full bg-primary"></div>
                     <span className="text-muted-foreground">Data Structures &amp; Algorithms</span>
                   </li>
                   <li className="flex items-center gap-2 hover:text-primary transition-colors">
                     <div className="h-2 w-2 rounded-full bg-primary"></div>
+                    <span className="text-muted-foreground">Program Design</span>
+                  </li>
+                  <li className="flex items-center gap-2 hover:text-primary transition-colors">
+                    <div className="h-2 w-2 rounded-full bg-primary"></div>
                     <span className="text-muted-foreground">Intro to Programming</span>
-                  </li>
-                  <li className="flex items-center gap-2 hover:text-primary transition-colors">
-                    <div className="h-2 w-2 rounded-full bg-primary"></div>
-                    <span className="text-muted-foreground">Discrete Structure</span>
-                  </li>
-                  <li className="flex items-center gap-2 hover:text-primary transition-colors">
-                    <div className="h-2 w-2 rounded-full bg-primary"></div>
-                    <span className="text-muted-foreground">Backend Engineering Fundamentals</span>
                   </li>
                 </ul>
               </div>

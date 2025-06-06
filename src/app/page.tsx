@@ -155,16 +155,24 @@ export default function Home() {
               </h3>
               <div className="space-y-4 sm:space-y-6">
                 <div>
-                  <p className="font-medium mb-1 sm:mb-2 text-primary/80 text-sm sm:text-base">Languages & Libraries</p>
-                  <p className="text-xs sm:text-sm text-muted-foreground">C/C++, Java, Python, JavaScript/TypeScript, Numpy, Librosa, Scikit-learn, SQL, Pandas</p>
+                  <p className="font-medium mb-1 sm:mb-2 text-primary/80 text-sm sm:text-base">Programming Languages</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">JavaScript/TypeScript, Python, Java, C/C++, SQL</p>
                 </div>
                 <div>
-                  <p className="font-medium mb-1 sm:mb-2 text-primary/80 text-sm sm:text-base">Developer Tools</p>
-                  <p className="text-xs sm:text-sm text-muted-foreground">MongoDB, PostgreSQL, Github, Prisma, Supabase, REST API, AWS, Figma, Docker, Postman, Azure</p>
+                  <p className="font-medium mb-1 sm:mb-2 text-primary/80 text-sm sm:text-base">Database & Tools</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">PostgreSQL, MongoDB, Supabase, Prisma, Jira, Figma, Clerk</p>
                 </div>
                 <div>
-                  <p className="font-medium mb-1 sm:mb-2 text-primary/80 text-sm sm:text-base">Frameworks</p>
-                  <p className="text-xs sm:text-sm text-muted-foreground">Vue.js/NuxtJS, Next/React.js, Node.js/NestJS, Express.js, Spring, Spring Boot, Django, Flask</p>
+                  <p className="font-medium mb-1 sm:mb-2 text-primary/80 text-sm sm:text-base">Cloud & DevOps</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">Docker, AWS Lambda/EC2/RDS/CloudFront/CloudWatch/Elastic Beanstalk/SageMaker/Bedrock, Azure</p>
+                </div>
+                <div>
+                  <p className="font-medium mb-1 sm:mb-2 text-primary/80 text-sm sm:text-base">Machine Learning and AI</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">NumPy, Pandas, Scikit-learn, PyTorch, TensorFlow, OpenAI, Google Gemini</p>
+                </div>
+                <div>
+                  <p className="font-medium mb-1 sm:mb-2 text-primary/80 text-sm sm:text-base">Web Technologies</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">React.js, NuxtJS, Next.js, Tailwind CSS, Node.js, NestJS, Express.js</p>
                 </div>
               </div>
             </div>

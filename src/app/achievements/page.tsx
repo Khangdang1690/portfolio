@@ -84,8 +84,8 @@ export default function AchievementsPage() {
                       <Medal className="h-6 w-6 text-primary group-hover:scale-110 transition-transform" />
                     </div>
                     <div>
-                      <h3 className="font-medium group-hover:text-primary/90 transition-colors">GPA: 3.93/4.0</h3>
-                      <p className="text-muted-foreground">Maintaining academic excellence throughout Computer Science curriculum</p>
+                      <h3 className="font-medium group-hover:text-primary/90 transition-colors">GPA: 4.0/4.0</h3>
+                      <p className="text-muted-foreground">Maintaining perfect academic excellence throughout Computer Science curriculum</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4 group">

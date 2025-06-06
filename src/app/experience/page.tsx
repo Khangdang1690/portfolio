@@ -7,41 +7,52 @@ import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 const experiences = [
   {
-    title: "Software Engineer - Lead Backend",
-    company: "Finbud AI - Microsoft sponsored $1000",
-    location: "Chicago, Illinois",
-    period: "Feb 2024 - Present",
+    title: "Opensource Contributor",
+    company: "Agno",
+    location: "New York City, NY",
+    period: "May 2025 -- Present",
+    description: [
+      "Fixed critical Gemini 2.0 Flash API compatibility bug in Agno framework (27.3k GitHub stars), enabling universal support across OpenAI, Meta, Anthropic, AWS, Azure, NVIDIA and 20+ LLM providers for data visualization tools.",
+      "Developed comprehensive testing framework with 23 unit tests achieving 100% pass rate, implementing robust error handling and multi-format data validation for chart generation capabilities.",
+      "Delivered production-ready open source contribution serving the fastest Agentic A.I library to 279,000+ users globally."
+    ],
+    skills: ["Python", "AI/ML", "LLM APIs", "OpenAI", "Meta", "Anthropic", "AWS", "Azure", "NVIDIA", "Unit Testing"]
+  },
+  {
+    title: "Software Engineer - Backend Lead",
+    company: "Finbud - Microsoft Sponsored $1000",
+    location: "Chicago, IL",
+    period: "Feb 2025 -- May 2025",
     description: [
       "Migrated backend from Node.js to NestJS, improving code maintainability by 60% and reducing API response times by 45% through modular architecture and optimized database queries.",
-      "Implemented JWT validation & authorizations, reducing security vulnerabilities by 70%, and built data scraping engine, eliminating third-party API costs, saving the company $41,976 annually and 30+ hours of manual data entry.",
-      "Orchestrated deployment pipeline with Docker containerization and AWS EC2 integration, resulting in 80% faster deployment cycles, 200% increased scaling capacity, and 99.9% service availability.",
-      "Enhanced 700 weekly users' experience by building a tutorial overlay using Nuxt.js."
+      "Set up a cron job for data scraping engine using AWS Lambda, eliminating third-party API costs by $41,976 annually.",
+      "Orchestrated deployment pipeline with Docker containerization and AWS EC2 integration, resulting in 80% faster deployment cycles, 200% increased scaling capacity, and 99.9% service availability."
     ],
-    skills: ["Node.js", "NestJS", "Docker", "AWS", "EC2", "JWT", "Nuxt.js"]
+    skills: ["Node.js", "NestJS", "Docker", "AWS Lambda", "AWS EC2", "Cron Jobs", "Data Scraping"]
   },
   {
     title: "Application Developer & Researcher",
     company: "LAM²P Laboratory",
-    location: "Tampa, Florida",
-    period: "Jan 2025 - Present",
+    location: "Tampa, FL",
+    period: "Jan 2025 -- May 2025",
     description: [
-      "Partnered with 3 PhD researchers to develop AI-driven classification system for superhydrophobic surface analysis across 500+ scientific publications.",
+      "Collaborate with PhDs student to develop an AI image classification system for visuals from 500+ research papers.",
       "Engineered efficient data extraction pipeline using BeautifulSoup, OpenAI API, and pdfminer, cutting processing time from 4 hours to 10 minutes and boosting throughput by 20x.",
       "Demonstrated technical capabilities with 97%+ accuracy in detecting hydrophobicity, supporting applications in medical surfaces and exploring commercialization opportunities across research institutions."
     ],
-    skills: ["Python", "BeautifulSoup", "OpenAI API", "pdfminer", "Data Extraction", "Machine Learning"]
+    skills: ["Python", "BeautifulSoup", "OpenAI API", "pdfminer", "AI Image Classification", "Data Extraction", "Machine Learning"]
   },
   {
     title: "Software Engineer - Backend Intern",
     company: "Wisdom Robotics",
     location: "Remote, Vietnam",
-    period: "Nov 2024 - Jan 2025",
+    period: "Oct 2024 -- Jan 2025",
     description: [
       "Developed 100% of the RESTful APIs using Express.js to manage order processing, tracking, and notifications.",
       "Optimized the find-the-closest-driver algorithm by 90% (from O(n) to O(log n)) using MongoDB indexing.",
-      "Integrated Firebase Cloud Messaging (FCM) for real-time notifications and conducted API testing using Postman, ensuring robust and reliable backend services."
+      "Integrated Firebase Cloud Messaging (FCM) for real-time notifications and conducted API testing using Postman."
     ],
-    skills: ["Express.js", "MongoDB", "Firebase", "RESTful API", "Postman"]
+    skills: ["Express.js", "MongoDB", "Firebase Cloud Messaging", "RESTful API", "Postman", "Algorithm Optimization"]
   }
 ];
 
@@ -124,34 +135,54 @@ export default function ExperiencePage() {
                     <div>
                       <CardTitle className="text-xl">University of South Florida</CardTitle>
                       <CardDescription className="text-primary font-medium">
-                        Bachelor of Computer Science
+                        Bachelor of Science in Computer Science
                       </CardDescription>
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      <div>GPA: 3.93</div>
-                      <div>Award: USF Green & Gold Presidential</div>
+                      <div>Tampa, FL</div>
+                      <div>Expected May 2028</div>
+                      <div>GPA: 4.0/4.0</div>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <div>
-                    <h3 className="font-medium mb-2">Relevant Coursework</h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                      <div className="flex items-start gap-2 group">
-                        <div className="h-2 w-2 rounded-full bg-primary mt-1.5 group-hover:scale-150 transition-transform"></div>
-                        <span className="text-muted-foreground group-hover:text-primary/80 transition-colors">Data Structures & Algorithms</span>
+                  <div className="space-y-4">
+                    <div>
+                      <h3 className="font-medium mb-2">Relevant Coursework</h3>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        <div className="flex items-start gap-2 group">
+                          <div className="h-2 w-2 rounded-full bg-primary mt-1.5 group-hover:scale-150 transition-transform"></div>
+                          <span className="text-muted-foreground group-hover:text-primary/80 transition-colors">Object-Oriented Programming</span>
+                        </div>
+                        <div className="flex items-start gap-2 group">
+                          <div className="h-2 w-2 rounded-full bg-primary mt-1.5 group-hover:scale-150 transition-transform"></div>
+                          <span className="text-muted-foreground group-hover:text-primary/80 transition-colors">Data Structures & Algorithms</span>
+                        </div>
+                        <div className="flex items-start gap-2 group">
+                          <div className="h-2 w-2 rounded-full bg-primary mt-1.5 group-hover:scale-150 transition-transform"></div>
+                          <span className="text-muted-foreground group-hover:text-primary/80 transition-colors">Program Design</span>
+                        </div>
+                        <div className="flex items-start gap-2 group">
+                          <div className="h-2 w-2 rounded-full bg-primary mt-1.5 group-hover:scale-150 transition-transform"></div>
+                          <span className="text-muted-foreground group-hover:text-primary/80 transition-colors">Intro to Programming</span>
+                        </div>
                       </div>
-                      <div className="flex items-start gap-2 group">
-                        <div className="h-2 w-2 rounded-full bg-primary mt-1.5 group-hover:scale-150 transition-transform"></div>
-                        <span className="text-muted-foreground group-hover:text-primary/80 transition-colors">Intro to Programming</span>
-                      </div>
-                      <div className="flex items-start gap-2 group">
-                        <div className="h-2 w-2 rounded-full bg-primary mt-1.5 group-hover:scale-150 transition-transform"></div>
-                        <span className="text-muted-foreground group-hover:text-primary/80 transition-colors">Discrete Structure</span>
-                      </div>
-                      <div className="flex items-start gap-2 group">
-                        <div className="h-2 w-2 rounded-full bg-primary mt-1.5 group-hover:scale-150 transition-transform"></div>
-                        <span className="text-muted-foreground group-hover:text-primary/80 transition-colors">Backend Engineering Fundamentals</span>
+                    </div>
+                    <div>
+                      <h3 className="font-medium mb-2">Awards</h3>
+                      <div className="space-y-1">
+                        <div className="flex items-start gap-2 group">
+                          <div className="h-2 w-2 rounded-full bg-primary mt-1.5 group-hover:scale-150 transition-transform"></div>
+                          <span className="text-muted-foreground group-hover:text-primary/80 transition-colors">Nosu AI Hackathon Winner - $325</span>
+                        </div>
+                        <div className="flex items-start gap-2 group">
+                          <div className="h-2 w-2 rounded-full bg-primary mt-1.5 group-hover:scale-150 transition-transform"></div>
+                          <span className="text-muted-foreground group-hover:text-primary/80 transition-colors">Google Hackathon Winner - $200</span>
+                        </div>
+                        <div className="flex items-start gap-2 group">
+                          <div className="h-2 w-2 rounded-full bg-primary mt-1.5 group-hover:scale-150 transition-transform"></div>
+                          <span className="text-muted-foreground group-hover:text-primary/80 transition-colors">USF Green & Gold Presidential Award</span>
+                        </div>
                       </div>
                     </div>
                   </div>
