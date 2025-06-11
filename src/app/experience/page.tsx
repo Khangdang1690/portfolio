@@ -7,6 +7,30 @@ import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 const experiences = [
   {
+    title: "MLOps Engineer",
+    company: "Moffitt Cancer Center",
+    location: "Tampa, FL",
+    period: "Incoming - Summer 2025",
+    description: [
+      "Incoming MLOps Engineer position focused on machine learning operations and data pipeline optimization for cancer research applications.",
+      "Will be working on scalable ML infrastructure to support clinical research and patient care initiatives.",
+      "Expected to contribute to AI/ML systems that advance cancer treatment and research methodologies."
+    ],
+    skills: ["MLOps", "Machine Learning", "Data Pipelines", "Healthcare AI", "Clinical Research"]
+  },
+  {
+    title: "Backend Engineer",
+    company: "NAUCode",
+    location: "Remote",
+    period: "Present",
+    description: [
+      "Built 3 comprehensive internal tools to support the company management system, streamlining operations and improving workflow efficiency.",
+      "Implemented clustering and load balancing for NestJS applications, achieving 2x RPS improvement and 3-4x reduction in median latency through multi-core CPU utilization.",
+      "Optimized backend architecture using Node.js cluster module to enable parallel processing across multiple cores, significantly enhancing application performance and scalability."
+    ],
+    skills: ["NestJS", "Node.js", "Clustering", "Load Balancing", "Backend Architecture", "Performance Optimization", "Internal Tools"]
+  },
+  {
     title: "Opensource Contributor",
     company: "Agno",
     location: "New York City, NY",
