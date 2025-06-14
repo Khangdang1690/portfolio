@@ -35,6 +35,14 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
               GitHub
             </a>
             <a 
+              href="https://leetcode.com/u/khangdang0199/" 
+              className="text-muted-foreground hover:text-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LeetCode
+            </a>
+            <a 
               href="mailto:kaizerdang.work@gmail.com" 
               className="text-muted-foreground hover:text-primary"
             >

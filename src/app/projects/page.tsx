@@ -62,79 +62,94 @@ export default function ProjectsPage() {
             />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
             {projects.map((project, index) => (
               <AnimatedSection 
                 key={index} 
                 direction={index % 2 === 0 ? "left" : "right"} 
                 delay={0.1 * (index + 1)}
+                className={`${
+                  index === 0 ? 'md:col-span-8' : 
+                  index === 1 ? 'md:col-span-4' : 
+                  'md:col-span-6'
+                }`}
               >
-                <Card className="bg-card/60 backdrop-blur-sm border-border h-full flex flex-col hover:shadow-lg hover:shadow-primary/10 transition-all duration-300">
-                  <CardHeader>
+                <Card className={`bg-card/60 backdrop-blur-sm border-border h-full flex flex-col hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 group hover:border-primary/30 hover:-translate-y-1 ${
+                  index === 0 ? 'md:row-span-2' : ''
+                }`}>
+                  <CardHeader className="space-y-3">
                     <div className="flex justify-between items-start">
-                      <div>
-                        <CardTitle className="text-2xl mb-2">{project.title}</CardTitle>
-                        <CardDescription className="text-muted-foreground">
+                      <div className="space-y-2">
+                        <div className="flex items-center gap-2">
+                          <div className="h-2 w-2 rounded-full bg-gradient-to-r from-primary to-primary/60"></div>
+                          <span className="text-xs font-medium text-primary/80 uppercase tracking-wider">Project</span>
+                        </div>
+                        <CardTitle className="text-xl md:text-2xl group-hover:text-primary/90 transition-colors duration-300">{project.title}</CardTitle>
+                        <CardDescription className="text-muted-foreground leading-relaxed">
                           {project.description}
                         </CardDescription>
                       </div>
                     </div>
                   </CardHeader>
-                  <CardContent className="flex-grow">
-                    <div className="space-y-4">
-                      <div>
-                        <h3 className="font-medium mb-2">Achievement</h3>
-                        <p className="text-sm text-primary font-medium">{project.achievements}</p>
-                      </div>
-                      <div>
-                        <h3 className="font-medium mb-2">Key Features</h3>
-                        <ul className="space-y-2 text-sm text-muted-foreground">
-                          {project.details.map((detail, i) => (
-                            <li key={i} className="flex items-start gap-2 group">
-                              <div className="h-2 w-2 rounded-full bg-primary mt-1.5 group-hover:scale-150 transition-transform"></div>
-                              <span className="group-hover:text-primary/80 transition-colors">{detail}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                      <div>
-                        <h3 className="font-medium mb-2">Technologies</h3>
-                        <div className="flex flex-wrap gap-2">
-                          {project.technologies.map((tech, i) => (
-                            <span 
-                              key={i} 
-                              className="bg-secondary text-secondary-foreground px-2 py-1 rounded-md text-xs hover:scale-105 hover:bg-primary/20 transition-all cursor-default"
-                            >
-                              {tech}
-                            </span>
-                          ))}
-                        </div>
+                  <CardContent className="flex-grow space-y-6">
+                    <div className="p-4 rounded-lg bg-primary/5 border border-primary/20 group-hover:border-primary/40 transition-all duration-300">
+                      <h3 className="font-medium mb-2 text-primary/90">Achievement</h3>
+                      <p className="text-sm text-primary font-medium">{project.achievements}</p>
+                    </div>
+                    <div>
+                      <h3 className="font-medium mb-3 flex items-center gap-2">
+                        <div className="h-1 w-1 rounded-full bg-primary"></div>
+                        Key Features
+                      </h3>
+                      <ul className="space-y-3 text-sm text-muted-foreground">
+                        {project.details.map((detail, i) => (
+                          <li key={i} className="flex items-start gap-3 group/item">
+                            <div className="h-1.5 w-1.5 rounded-full bg-primary mt-2 group-hover/item:scale-150 transition-transform duration-300"></div>
+                            <span className="group-hover/item:text-primary/80 transition-colors duration-300">{detail}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div>
+                      <h3 className="font-medium mb-3 flex items-center gap-2">
+                        <div className="h-1 w-1 rounded-full bg-primary"></div>
+                        Technologies
+                      </h3>
+                      <div className="flex flex-wrap gap-2">
+                        {project.technologies.map((tech, i) => (
+                          <span 
+                            key={i} 
+                            className="bg-secondary/70 text-secondary-foreground px-3 py-1.5 rounded-full text-xs font-medium hover:scale-105 hover:bg-primary/20 hover:text-primary transition-all duration-300 cursor-default border border-border/50"
+                          >
+                            {tech}
+                          </span>
+                        ))}
                       </div>
                     </div>
                   </CardContent>
-                  <CardFooter className="flex gap-4 justify-end mt-auto">
+                  <CardFooter className="flex gap-3 justify-end mt-auto pt-6 border-t border-border/50">
                     {project.github && (
-                      <Button asChild variant="outline" size="sm" className="hover:border-primary/70">
+                      <Button asChild variant="outline" size="sm" className="hover:border-primary/70 group/btn">
                         <a 
                           href={project.github} 
                           target="_blank"
                           rel="noopener noreferrer" 
-                          className="flex items-center gap-1"
+                          className="flex items-center gap-2"
                         >
-                          <Github className="h-4 w-4" />
+                          <Github className="h-4 w-4 group-hover/btn:scale-110 transition-transform" />
                           GitHub
                         </a>
                       </Button>
                     )}
                     {project.link && (
-                      <Button asChild size="sm" className="group">
+                      <Button asChild size="sm" className="group/btn bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-md hover:shadow-lg">
                         <a
                           href={project.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-1"
+                          className="flex items-center gap-2"
                         >
-                          <ExternalLink className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                          <ExternalLink className="h-4 w-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
                           View Project
                         </a>
                       </Button>

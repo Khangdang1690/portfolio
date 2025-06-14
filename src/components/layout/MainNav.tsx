@@ -100,8 +100,11 @@ export function MainNav() {
 
   return (
     <div className="flex items-center justify-between py-3 sm:py-4">
-      <Link href="/" className="flex items-center space-x-2">
-        <span className="text-lg sm:text-xl font-bold text-primary">Kaizer Dang</span>
+      <Link href="/" className="flex items-center space-x-2 group">
+        <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+          <span className="text-white font-bold text-sm">KD</span>
+        </div>
+        <span className="text-lg sm:text-xl font-bold text-primary group-hover:text-primary/80 transition-colors">Kaizer Dang</span>
       </Link>
       
       <Suspense fallback={<NavigationLinksFallback />}>
@@ -110,19 +113,22 @@ export function MainNav() {
       
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild className="md:hidden">
-          <Button variant="ghost" size="icon" className="h-8 w-8 sm:h-10 sm:w-10">
+          <Button variant="ghost" size="icon" className="h-8 w-8 sm:h-10 sm:w-10 hover:bg-primary/10 transition-colors duration-300">
             <Menu className="h-5 w-5 sm:h-6 sm:w-6" />
             <span className="sr-only">Toggle menu</span>
           </Button>
         </SheetTrigger>
-        <SheetContent side="right" className="bg-card pt-10 w-[75vw] sm:w-[50vw] md:w-[350px]">
+        <SheetContent side="right" className="bg-card/95 backdrop-blur-lg pt-10 w-[75vw] sm:w-[50vw] md:w-[350px] border-l border-border/50">
           <div className="flex flex-col space-y-6 py-4">
             <Link
               href="/"
-              className="flex items-center space-x-2"
+              className="flex items-center space-x-2 group"
               onClick={() => setOpen(false)}
             >
-              <span className="text-xl font-bold text-primary">Kaizer Dang</span>
+              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <span className="text-white font-bold text-sm">KD</span>
+              </div>
+              <span className="text-xl font-bold text-primary group-hover:text-primary/80 transition-colors">Kaizer Dang</span>
             </Link>
             <Suspense fallback={<NavigationLinksFallback onLinkClick={() => setOpen(false)} />}>
               <NavigationLinks onLinkClick={() => setOpen(false)} />
