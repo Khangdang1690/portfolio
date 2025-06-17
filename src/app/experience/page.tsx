@@ -72,11 +72,11 @@ const experiences = [
     location: "Remote, Vietnam",
     period: "Oct 2024 -- Jan 2025",
     description: [
-      "Developed 100% of the RESTful APIs using Express.js to manage order processing, tracking, and notifications.",
-      "Optimized the find-the-closest-driver algorithm by 90% (from O(n) to O(log n)) using MongoDB indexing.",
-      "Integrated Firebase Cloud Messaging (FCM) for real-time notifications and conducted API testing using Postman."
+      "Developed 100% of the RESTful APIs using Spring Boot to manage order processing, tracking, and notifications.",
+      "Optimized the find-the-closest-driver algorithm by 90% (from O(n) to O(log n)) using MySQL indexing.",
+      "Integrated JavaMail API for real-time notifications and conducted API testing using Postman."
     ],
-    skills: ["Express.js", "MongoDB", "Firebase Cloud Messaging", "RESTful API", "Postman", "Algorithm Optimization"]
+    skills: ["Spring Boot", "MySQL", "JavaMail API", "RESTful API", "Postman", "Algorithm Optimization", "Java"]
   }
 ];
 

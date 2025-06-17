@@ -173,19 +173,16 @@ export default function Home() {
                 </div>
                 <div className="p-3 rounded-lg bg-card/30 border border-border/50 hover:border-primary/30 transition-all duration-300 group/card">
                   <p className="font-medium mb-1 sm:mb-2 text-primary/80 text-sm sm:text-base group-hover/card:text-primary transition-colors">Database & Tools</p>
-                  <p className="text-xs sm:text-sm text-muted-foreground">PostgreSQL, MongoDB, Supabase, Prisma, Jira, Figma, Clerk</p>
-                </div>
-                <div className="p-3 rounded-lg bg-card/30 border border-border/50 hover:border-primary/30 transition-all duration-300 group/card">
-                  <p className="font-medium mb-1 sm:mb-2 text-primary/80 text-sm sm:text-base group-hover/card:text-primary transition-colors">Cloud & DevOps</p>
-                  <p className="text-xs sm:text-sm text-muted-foreground">Docker, AWS Lambda/EC2/RDS/CloudFront/CloudWatch/Elastic Beanstalk/SageMaker/Bedrock, Azure</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">PostgreSQL, MongoDB, MySQL, Supabase, Prisma, Jira, Linux/Unix, Docker, Github CI/CD, AWS, Azure</p>
                 </div>
                 <div className="p-3 rounded-lg bg-card/30 border border-border/50 hover:border-primary/30 transition-all duration-300 group/card">
                   <p className="font-medium mb-1 sm:mb-2 text-primary/80 text-sm sm:text-base group-hover/card:text-primary transition-colors">Machine Learning and AI</p>
-                  <p className="text-xs sm:text-sm text-muted-foreground">NumPy, Pandas, Scikit-learn, PyTorch, TensorFlow, OpenAI, Google Gemini</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">Numpy, Pandas, Matplotlib, Seaborn, Scikit-learn, PyTorch, TensorFlow, OpenAI, Google Gemini</p>
                 </div>
+
                 <div className="p-3 rounded-lg bg-card/30 border border-border/50 hover:border-primary/30 transition-all duration-300 group/card col-span-1 sm:col-span-2">
                   <p className="font-medium mb-1 sm:mb-2 text-primary/80 text-sm sm:text-base group-hover/card:text-primary transition-colors">Web Technologies</p>
-                  <p className="text-xs sm:text-sm text-muted-foreground">React.js, NuxtJS, Next.js, Tailwind CSS, Node.js, NestJS, Express.js</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">React.js, Next.js, Tailwind CSS, Node.js, NestJS, Express.js, FastAPI, Flask, Django, Spring Boot</p>
                 </div>
               </div>
             </div>
