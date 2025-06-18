@@ -62,21 +62,14 @@ export default function ProjectsPage() {
             />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {projects.map((project, index) => (
               <AnimatedSection 
                 key={index} 
                 direction={index % 2 === 0 ? "left" : "right"} 
                 delay={0.1 * (index + 1)}
-                className={`${
-                  index === 0 ? 'md:col-span-8' : 
-                  index === 1 ? 'md:col-span-4' : 
-                  'md:col-span-6'
-                }`}
               >
-                <Card className={`bg-card/60 backdrop-blur-sm border-border h-full flex flex-col hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 group hover:border-primary/30 hover:-translate-y-1 ${
-                  index === 0 ? 'md:row-span-2' : ''
-                }`}>
+                <Card className="bg-card/60 backdrop-blur-sm border-border h-full flex flex-col hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 group hover:border-primary/30 hover:-translate-y-1">
                   <CardHeader className="space-y-3">
                     <div className="flex justify-between items-start">
                       <div className="space-y-2">

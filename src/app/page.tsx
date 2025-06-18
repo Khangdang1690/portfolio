@@ -172,17 +172,16 @@ export default function Home() {
                   <p className="text-xs sm:text-sm text-muted-foreground">JavaScript/TypeScript, Python, Java, C/C++, SQL</p>
                 </div>
                 <div className="p-3 rounded-lg bg-card/30 border border-border/50 hover:border-primary/30 transition-all duration-300 group/card">
+                  <p className="font-medium mb-1 sm:mb-2 text-primary/80 text-sm sm:text-base group-hover/card:text-primary transition-colors">Web Technologies</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">React.js, Next.js, Tailwind CSS, Node.js, NestJS, Express.js, FastAPI, Flask, Django, Spring Boot</p>
+                </div>
+                <div className="p-3 rounded-lg bg-card/30 border border-border/50 hover:border-primary/30 transition-all duration-300 group/card">
                   <p className="font-medium mb-1 sm:mb-2 text-primary/80 text-sm sm:text-base group-hover/card:text-primary transition-colors">Database & Tools</p>
                   <p className="text-xs sm:text-sm text-muted-foreground">PostgreSQL, MongoDB, MySQL, Supabase, Prisma, Jira, Linux/Unix, Docker, Github CI/CD, AWS, Azure</p>
                 </div>
                 <div className="p-3 rounded-lg bg-card/30 border border-border/50 hover:border-primary/30 transition-all duration-300 group/card">
                   <p className="font-medium mb-1 sm:mb-2 text-primary/80 text-sm sm:text-base group-hover/card:text-primary transition-colors">Machine Learning and AI</p>
                   <p className="text-xs sm:text-sm text-muted-foreground">Numpy, Pandas, Matplotlib, Seaborn, Scikit-learn, PyTorch, TensorFlow, OpenAI, Google Gemini</p>
-                </div>
-
-                <div className="p-3 rounded-lg bg-card/30 border border-border/50 hover:border-primary/30 transition-all duration-300 group/card col-span-1 sm:col-span-2">
-                  <p className="font-medium mb-1 sm:mb-2 text-primary/80 text-sm sm:text-base group-hover/card:text-primary transition-colors">Web Technologies</p>
-                  <p className="text-xs sm:text-sm text-muted-foreground">React.js, Next.js, Tailwind CSS, Node.js, NestJS, Express.js, FastAPI, Flask, Django, Spring Boot</p>
                 </div>
               </div>
             </div>
