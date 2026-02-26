@@ -8,39 +8,42 @@ import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 const projects = [
   {
-    title: "Sign1o",
-    description: "CNN model for sign language recognition with real-time processing capabilities.",
-    technologies: ["Prisma", "PostgreSQL", "NestJS", "Next.js", "Shadcn", "FastAPI", "PyTorch", "Google Gemini"],
-    achievements: "AI-powered sign language recognition system",
-    link: "https://devpost.com/software/sign1o",
-    github: null,
+    title: "Nexus",
+    description: "Real-time trading platform with WebSocket market data and quantitative trading strategies.",
+    technologies: ["Next.js", "TypeScript", "Alpaca API", "WebSocket"],
+    achievements: "Open-sourced multi-strategy quantitative trading system",
+    link: "https://github.com/Khangdang1690/nexus",
+    github: "https://github.com/Khangdang1690/nexus",
     details: [
-      "Built a CNN model (Python, TensorFlow) for sign language recognition, achieving 90%+ accuracy on 100+ video samples with a pipeline for 5% quarterly accuracy gains.",
-      "Enhanced a NestJS backend service using Prisma ORM with a PostgreSQL database by integrating Prisma Accelerate; reduced query latency by 70% and connected backend with frontend using WebSockets to serve 50+ signs."
+      "Built a WebSocket gateway that connects to real-time market data using Alpaca API.",
+      "Executed quantitative trading algorithm TheOmniscientParadox after a 68% win rate backtest.",
+      "Architected a system that supports multiple trading strategies and open-sourced it."
     ]
   },
   {
-    title: "SafeGuard",
+    title: "Safe Guard",
     description: "Convolutional neural network for skin cancer classification with containerized deployment.",
     technologies: ["Docker", "Azure", "React.js", "Node.js", "Flask", "TensorFlow.js"],
-    achievements: "Medical AI diagnostic tool",
+    achievements: "Google Hackathon Winner · Medical AI diagnostic tool",
     link: "https://devpost.com/software/safeguard-oq572w",
     github: null,
     details: [
       "Built a convolutional neural network using TensorFlow for skin cancer classification, achieving 52% accuracy.",
-      "Architected and deployed backend microservices with Flask, Express.js, and MongoDB, containerized via Docker, and automated deployments with Azure CI/CD pipelines, improving delivery speed and system reliability by 187%."
+      "Architected and deployed backend microservices with Flask, Express.js, and MongoDB via Docker.",
+      "Automated deployments with Azure CI/CD pipelines, improving delivery speed by 187%."
     ]
   },
   {
-    title: "FoiceDetect",
-    description: "Deepfake voice detection model using SVM classifier with high accuracy detection.",
-    technologies: ["NumPy", "Scikit-learn", "Librosa", "Django", "Next.js"],
-    achievements: "Nosu AI Hackathon Winner - $325",
+    title: "Foicedetect",
+    description: "Deepfake voice detection using SVM classifier on audio features.",
+    technologies: ["Numpy", "Scikit-learn", "Librosa", "Django", "Next.js"],
+    achievements: "Nosu AI Hackathon Winner",
     link: "https://devpost.com/software/foicedetect",
     github: null,
     details: [
       "Built deepfake voice detection model using SVM classifier on 100+ audio samples, achieving 94% accuracy.",
-      "Enabled real-time voice detection to present to 150+ AI professionals at USF ACM AI Convention."
+      "Developed the authentication and fake voice detection management for 80 users.",
+      "Enabled real-time voice detection to present to 150+ audience at USF ACM AI Convention."
     ]
   }
 ];

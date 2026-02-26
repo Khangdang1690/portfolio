@@ -148,7 +148,7 @@ export function ContactForm() {
         </Button>
 
         <p className="text-xs text-muted-foreground text-center">
-          Your message will be sent directly to Kaizer Dang.
+          Your message will be sent directly to Khang Dang.
         </p>
       </form>
     </Form>

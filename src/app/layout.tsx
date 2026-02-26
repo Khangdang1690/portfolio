@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kaizer Dang | Portfolio",
+  title: "Khang Dang | Portfolio",
   description: "Backend Developer & DevOps Engineer specializing in Cloud technologies",
 };
 

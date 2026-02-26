@@ -70,10 +70,10 @@ export default function ContactPage() {
                       <div>
                         <h3 className="font-medium group-hover:text-primary transition-colors">Phone</h3>
                         <a 
-                          href="tel:+17142242543" 
+                          href="tel:+19168917368" 
                           className="text-muted-foreground hover:text-primary transition-colors"
                         >
-                          (714) 224-2543
+                          916-891-7368
                         </a>
                       </div>
                     </div>

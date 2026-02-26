@@ -104,7 +104,7 @@ export function MainNav() {
         <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
           <span className="text-white font-bold text-sm">KD</span>
         </div>
-        <span className="text-lg sm:text-xl font-bold text-primary group-hover:text-primary/80 transition-colors">Kaizer Dang</span>
+        <span className="text-lg sm:text-xl font-bold text-primary group-hover:text-primary/80 transition-colors">Khang Dang</span>
       </Link>
       
       <Suspense fallback={<NavigationLinksFallback />}>
@@ -128,7 +128,7 @@ export function MainNav() {
               <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                 <span className="text-white font-bold text-sm">KD</span>
               </div>
-              <span className="text-xl font-bold text-primary group-hover:text-primary/80 transition-colors">Kaizer Dang</span>
+              <span className="text-xl font-bold text-primary group-hover:text-primary/80 transition-colors">Khang Dang</span>
             </Link>
             <Suspense fallback={<NavigationLinksFallback onLinkClick={() => setOpen(false)} />}>
               <NavigationLinks onLinkClick={() => setOpen(false)} />

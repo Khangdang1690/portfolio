@@ -100,7 +100,7 @@ export function HackingAnimatedText({
       const randomCharHighlight = () => {
         const wordIdx = Math.floor(Math.random() * words.length);
         
-        // Skip highlighting if the word is "Kaizer" or "Dang"
+        // Skip highlighting if the word is "Khang" or "Dang"
         if (words[wordIdx].toLowerCase() === "kaizer" || words[wordIdx].toLowerCase() === "dang") {
           return;
         }
@@ -136,7 +136,7 @@ export function HackingAnimatedText({
       const wordGlitch = () => {
         const wordIdx = Math.floor(Math.random() * words.length);
         
-        // Skip glitching if the word is "Kaizer" or "Dang"
+        // Skip glitching if the word is "Khang" or "Dang"
         if (words[wordIdx].toLowerCase() === "kaizer" || words[wordIdx].toLowerCase() === "dang") {
           return;
         }
@@ -224,7 +224,7 @@ export function HackingAnimatedText({
       const charScrambleEffect = () => {
         const wordIdx = Math.floor(Math.random() * words.length);
         
-        // Skip scrambling if the word is "Kaizer" or "Dang"
+        // Skip scrambling if the word is "Khang" or "Dang"
         if (words[wordIdx].toLowerCase() === "kaizer" || words[wordIdx].toLowerCase() === "dang") {
           return;
         }
@@ -311,7 +311,7 @@ export function HackingAnimatedText({
       const matrixEffect = () => {
         const wordIdx = Math.floor(Math.random() * words.length);
         
-        // Skip matrix effect if the word is "Kaizer" or "Dang"
+        // Skip matrix effect if the word is "Khang" or "Dang"
         if (words[wordIdx].toLowerCase() === "kaizer" || words[wordIdx].toLowerCase() === "dang") {
           return;
         }
@@ -326,9 +326,9 @@ export function HackingAnimatedText({
         );
       };
       
-      // Add a special color effect specifically for "Kaizer Dang"
+      // Add a special color effect specifically for "Khang Dang"
       const nameColorEffect = () => {
-        // Find "Kaizer" and "Dang" in the words array
+        // Find "Khang" and "Dang" in the words array
         const nameIndices: number[] = [];
         words.forEach((word, index) => {
           if (word.toLowerCase() === "kaizer" || word.toLowerCase() === "dang") {
@@ -372,7 +372,7 @@ export function HackingAnimatedText({
               case 6: digitalArtifactsEffect(); break;
               case 7: glitchOffsetEffect(); break;
               case 8: matrixEffect(); break;
-              case 9: nameColorEffect(); break; // New special effect for "Kaizer Dang"
+              case 9: nameColorEffect(); break; // New special effect for "Khang Dang"
             }
           }, delay)
         );

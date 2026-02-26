@@ -18,11 +18,11 @@ export default function Home() {
           {/* Left Content Area */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left gap-3 sm:gap-4 md:gap-6 w-full">
             <HackingAnimatedText 
-              text="Kaizer Dang"
+              text="Khang Dang"
               className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mt-4 md:mt-0"
             />
             <AnimatedText 
-              text="Backend Developer & DevOps Engineer"
+              text="Software Engineer & CS Student at USF"
               className="text-lg sm:text-xl md:text-2xl text-muted-foreground"
             />
             
@@ -30,7 +30,7 @@ export default function Home() {
               delay={0.4}
             >
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl px-2 md:px-0">
-                Backend Developer focused on building fast, secure systems with expertise in cloud technologies.
+                Building ETL pipelines, AI/ML systems, and full-stack applications. Nosu AI & Google Hackathon Winner. Contributing to open source (Agno, 34k+ stars).
               </p>
             </AnimatedSection>
             
@@ -100,7 +100,7 @@ export default function Home() {
                 <Avatar className="size-32 sm:size-40 md:size-56 lg:size-64 border-2 border-primary/30 shadow-lg shadow-primary/10 overflow-hidden">
                   <AvatarImage 
                     src="/Khang.png" 
-                    alt="Kaizer Dang" 
+                    alt="Khang Dang" 
                     className="object-cover" 
                   />
                   <AvatarFallback className="text-3xl sm:text-4xl md:text-5xl font-bold bg-secondary text-primary">KD</AvatarFallback>
@@ -121,32 +121,32 @@ export default function Home() {
             <div className="space-y-4 sm:space-y-6">
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold">Skills &amp; Expertise</h2>
               <p className="text-sm sm:text-base text-muted-foreground">
-                As a sophomore Computer Science student at the University of South Florida, I specialize in:
+                B.S. in Computer Science at USF (GPA 4.0). I work across full-stack, data pipelines, and ML:
               </p>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 sm:gap-y-4 gap-x-4 sm:gap-x-8">
                 <li className="flex items-center gap-2 sm:gap-3 group">
                   <div className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-primary group-hover:scale-150 transition-all duration-300"></div>
-                  <span className="text-sm sm:text-base group-hover:text-primary transition-colors">Backend Development</span>
+                  <span className="text-sm sm:text-base group-hover:text-primary transition-colors">ETL & Data Pipelines (dlthub, LanceDB)</span>
                 </li>
                 <li className="flex items-center gap-2 sm:gap-3 group">
                   <div className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-primary group-hover:scale-150 transition-all duration-300"></div>
-                  <span className="text-sm sm:text-base group-hover:text-primary transition-colors">DevOps & CI/CD</span>
+                  <span className="text-sm sm:text-base group-hover:text-primary transition-colors">Full-Stack (React, Next.js, Node, FastAPI)</span>
                 </li>
                 <li className="flex items-center gap-2 sm:gap-3 group">
                   <div className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-primary group-hover:scale-150 transition-all duration-300"></div>
-                  <span className="text-sm sm:text-base group-hover:text-primary transition-colors">Cloud Architecture</span>
+                  <span className="text-sm sm:text-base group-hover:text-primary transition-colors">Payments (Brex, Stripe)</span>
                 </li>
                 <li className="flex items-center gap-2 sm:gap-3 group">
                   <div className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-primary group-hover:scale-150 transition-all duration-300"></div>
-                  <span className="text-sm sm:text-base group-hover:text-primary transition-colors">API Development</span>
+                  <span className="text-sm sm:text-base group-hover:text-primary transition-colors">Machine Learning (PyTorch, TensorFlow, Scikit-learn)</span>
                 </li>
                 <li className="flex items-center gap-2 sm:gap-3 group">
                   <div className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-primary group-hover:scale-150 transition-all duration-300"></div>
-                  <span className="text-sm sm:text-base group-hover:text-primary transition-colors">Database Management</span>
+                  <span className="text-sm sm:text-base group-hover:text-primary transition-colors">Databases (PostgreSQL, MongoDB, LanceDB)</span>
                 </li>
                 <li className="flex items-center gap-2 sm:gap-3 group">
                   <div className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-primary group-hover:scale-150 transition-all duration-300"></div>
-                  <span className="text-sm sm:text-base group-hover:text-primary transition-colors">System Architecture</span>
+                  <span className="text-sm sm:text-base group-hover:text-primary transition-colors">DevOps & Cloud (Docker, AWS, Azure)</span>
                 </li>
               </ul>
               <div className="pt-2 sm:pt-4">
@@ -168,20 +168,20 @@ export default function Home() {
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div className="p-3 rounded-lg bg-card/30 border border-border/50 hover:border-primary/30 transition-all duration-300 group/card">
-                  <p className="font-medium mb-1 sm:mb-2 text-primary/80 text-sm sm:text-base group-hover/card:text-primary transition-colors">Programming Languages</p>
-                  <p className="text-xs sm:text-sm text-muted-foreground">JavaScript/TypeScript, Python, Java, C/C++, SQL</p>
+                  <p className="font-medium mb-1 sm:mb-2 text-primary/80 text-sm sm:text-base group-hover/card:text-primary transition-colors">Languages</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">JavaScript/TypeScript, Python, C++, SQL</p>
                 </div>
                 <div className="p-3 rounded-lg bg-card/30 border border-border/50 hover:border-primary/30 transition-all duration-300 group/card">
-                  <p className="font-medium mb-1 sm:mb-2 text-primary/80 text-sm sm:text-base group-hover/card:text-primary transition-colors">Web Technologies</p>
-                  <p className="text-xs sm:text-sm text-muted-foreground">React.js, Next.js, Tailwind CSS, Node.js, NestJS, Express.js, FastAPI, Flask, Django, Spring Boot</p>
+                  <p className="font-medium mb-1 sm:mb-2 text-primary/80 text-sm sm:text-base group-hover/card:text-primary transition-colors">Frameworks</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">React.js, Next.js, Node.js, Express.js, NestJS, dlthub, FastAPI</p>
                 </div>
                 <div className="p-3 rounded-lg bg-card/30 border border-border/50 hover:border-primary/30 transition-all duration-300 group/card">
-                  <p className="font-medium mb-1 sm:mb-2 text-primary/80 text-sm sm:text-base group-hover/card:text-primary transition-colors">Database & Tools</p>
-                  <p className="text-xs sm:text-sm text-muted-foreground">PostgreSQL, MongoDB, MySQL, Supabase, Prisma, Jira, Linux/Unix, Docker, Github CI/CD, AWS, Azure</p>
+                  <p className="font-medium mb-1 sm:mb-2 text-primary/80 text-sm sm:text-base group-hover/card:text-primary transition-colors">Databases &amp; Tools</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">SQLite, PostgreSQL, MySQL, MongoDB, LanceDB, Docker, GitHub CI/CD, AWS, Azure</p>
                 </div>
                 <div className="p-3 rounded-lg bg-card/30 border border-border/50 hover:border-primary/30 transition-all duration-300 group/card">
-                  <p className="font-medium mb-1 sm:mb-2 text-primary/80 text-sm sm:text-base group-hover/card:text-primary transition-colors">Machine Learning and AI</p>
-                  <p className="text-xs sm:text-sm text-muted-foreground">Numpy, Pandas, Matplotlib, Seaborn, Scikit-learn, PyTorch, TensorFlow, OpenAI, Google Gemini</p>
+                  <p className="font-medium mb-1 sm:mb-2 text-primary/80 text-sm sm:text-base group-hover/card:text-primary transition-colors">Machine Learning</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">PyTorch, TensorFlow, Scikit-learn, Numpy, Pandas</p>
                 </div>
               </div>
             </div>

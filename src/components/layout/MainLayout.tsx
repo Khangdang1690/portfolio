@@ -15,7 +15,7 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
       <footer className="border-t border-border py-4 sm:py-6">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-between gap-3 md:flex-row">
           <p className="text-xs sm:text-sm text-muted-foreground text-center md:text-left">
-            &copy; {new Date().getFullYear()} Kaizer Dang. All rights reserved.
+            &copy; {new Date().getFullYear()} Khang Dang. All rights reserved.
           </p>
           <div className="flex items-center gap-3 sm:gap-4 text-xs sm:text-sm">
             <a 

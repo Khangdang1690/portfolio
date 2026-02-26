@@ -8,19 +8,19 @@ import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 const awards = [
   {
     title: "Nosu AI Hackathon Winner",
-    description: "Recognized for creating Foicedetect, a deepfake voice detection system",
-    prize: "$325",
+    description: "Recognized for creating Foicedetect, a deepfake voice detection system using SVM on 100+ audio samples with 94% accuracy.",
+    prize: null,
     icon: Trophy
   },
   {
-    title: "Google HackUSF Winner",
-    description: "Won Moffitt AI in Healthcare track with SafeGuard, a fall detection and support system for elderly care",
-    prize: "$200",
+    title: "Google Hackathon Winner",
+    description: "Won with SafeGuard, a skin cancer classification system using CNN and TensorFlow, deployed with Docker and Azure CI/CD.",
+    prize: null,
     icon: Trophy
   },
   {
     title: "USF Green & Gold Presidential Award",
-    description: "Academic scholarship recognizing exceptional scholastic achievement",
+    description: "Academic scholarship recognizing exceptional scholastic achievement (GPA 4.0).",
     prize: null,
     icon: Award
   }
@@ -64,6 +64,9 @@ export default function AchievementsPage() {
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground">{award.description}</p>
+                      {award.prize && (
+                        <p className="text-primary font-medium mt-2">Prize: {award.prize}</p>
+                      )}
                     </CardContent>
                   </Card>
                 </AnimatedSection>
@@ -118,13 +121,13 @@ export default function AchievementsPage() {
                       <li className="flex items-start gap-2 group">
                         <div className="h-2 w-2 rounded-full bg-primary mt-1.5 group-hover:scale-150 transition-transform"></div>
                         <span className="text-muted-foreground group-hover:text-primary/80 transition-colors">
-                          Reduced API response times by 45% at Finbud AI
+                          ETL pipelines and vector search at OncoBrain (CancerX)
                         </span>
                       </li>
                       <li className="flex items-start gap-2 group">
                         <div className="h-2 w-2 rounded-full bg-primary mt-1.5 group-hover:scale-150 transition-transform"></div>
                         <span className="text-muted-foreground group-hover:text-primary/80 transition-colors">
-                          Optimized algorithms by 90% at Wisdom Robotics
+                          B2B payments (Brex, Stripe) and JWT auth at Embarc Collective
                         </span>
                       </li>
                     </ul>
@@ -145,13 +148,13 @@ export default function AchievementsPage() {
                       <li className="flex items-start gap-2 group">
                         <div className="h-2 w-2 rounded-full bg-primary mt-1.5 group-hover:scale-150 transition-transform"></div>
                         <span className="text-muted-foreground group-hover:text-primary/80 transition-colors">
-                          Increased deployment speed by 80% with Docker and AWS EC2
+                          Azure CI/CD and Docker for SafeGuard (187% delivery speed improvement)
                         </span>
                       </li>
                       <li className="flex items-start gap-2 group">
                         <div className="h-2 w-2 rounded-full bg-primary mt-1.5 group-hover:scale-150 transition-transform"></div>
                         <span className="text-muted-foreground group-hover:text-primary/80 transition-colors">
-                          Achieved 99.9% service availability through optimized cloud architecture
+                          Agno open source: Gemini 2.0 Flash compatibility for 20+ LLM providers
                         </span>
                       </li>
                     </ul>

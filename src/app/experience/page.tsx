@@ -7,76 +7,40 @@ import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 const experiences = [
   {
-    title: "MLOps Engineer",
-    company: "Moffitt Cancer Center",
+    title: "Software Engineer Intern",
+    company: "OncoBrain (CancerX 2026 Cohort)",
     location: "Tampa, FL",
-    period: "Incoming - Fall 2025",
+    period: "Jan 2026 -- Present",
     description: [
-      "Incoming MLOps Engineer position focused on machine learning operations and data pipeline optimization for cancer research applications.",
-      "Will be working on scalable ML infrastructure to support clinical research and patient care initiatives.",
-      "Expected to contribute to AI/ML systems that advance cancer treatment and research methodologies."
+      "Developed Extract Transform Load (ETL) pipeline using dlthub for 5 oncology data sources.",
+      "Invented a classification algorithm that categorizes PDF pages as text-only or visual-containing, reducing third-party API costs by 66%.",
+      "Assisted in optimizing the reranking API for LanceDB vector search to improve retrieval accuracy."
     ],
-    skills: ["MLOps", "Machine Learning", "Data Pipelines", "Healthcare AI", "Clinical Research"]
+    skills: ["dlthub", "ETL", "LanceDB", "Vector Search", "Python", "Data Pipelines", "Healthcare"]
   },
   {
-    title: "Backend Engineer",
-    company: "NAUCode",
-    location: "Remote",
-    period: "May 2025 -- Present",
+    title: "Software Engineer Intern",
+    company: "Embarc Collective",
+    location: "Tampa, FL",
+    period: "July 2025 -- Dec 2025",
     description: [
-      "Built 3 comprehensive internal tools to support the company management system, streamlining operations and improving workflow efficiency.",
-      "Implemented clustering and load balancing for NestJS applications, achieving 2x RPS improvement and 3-4x reduction in median latency through multi-core CPU utilization.",
-      "Optimized backend architecture using Node.js cluster module to enable parallel processing across multiple cores, significantly enhancing application performance and scalability."
+      "Developed a payment provider integrating Brex and Stripe to support business-to-business payments for over 60 brands.",
+      "Optimized the multilanguage architecture to support a dynamic multilanguage software system using JSON objects.",
+      "Implemented JWT authentication and authorization for 3 user roles: admin, sellers, and buyers."
     ],
-    skills: ["NestJS", "Node.js", "Clustering", "Load Balancing", "Backend Architecture", "Performance Optimization", "Internal Tools"]
+    skills: ["Brex", "Stripe", "JWT", "Node.js", "JSON", "B2B Payments"]
   },
   {
     title: "Opensource Contributor",
     company: "Agno",
     location: "New York City, NY",
-    period: "May 2025 -- Present",
+    period: "Jan 2025 -- June 2025",
     description: [
-      "Fixed critical Gemini 2.0 Flash API compatibility bug in Agno framework (27.3k GitHub stars), enabling universal support across OpenAI, Meta, Anthropic, AWS, Azure, NVIDIA and 20+ LLM providers for data visualization tools.",
-      "Developed comprehensive testing framework with 23 unit tests achieving 100% pass rate, implementing robust error handling and multi-format data validation for chart generation capabilities.",
-      "Delivered production-ready open source contribution serving the fastest Agentic A.I library to 279,000+ users globally."
+      "Engineered a visualization tool: https://docs.agno.com/examples/concepts/tools/others/visualization#visualization-tools",
+      "Fixed critical Gemini 2.0 Flash API compatibility bug in Agno framework (34.1k GitHub stars), enabling universal support across OpenAI, Meta, Anthropic, and 20+ LLM providers.",
+      "Wrote 23 unit tests and implemented chart generation capabilities using Matplotlib and Seaborn."
     ],
-    skills: ["Python", "AI/ML", "LLM APIs", "OpenAI", "Meta", "Anthropic", "AWS", "Azure", "NVIDIA", "Unit Testing"]
-  },
-  {
-    title: "Software Engineer - Backend Lead",
-    company: "Finbud - Microsoft Sponsored $1000",
-    location: "Chicago, IL",
-    period: "Feb 2025 -- May 2025",
-    description: [
-      "Migrated backend from Node.js to NestJS, improving code maintainability by 60% and reducing API response times by 45% through modular architecture and optimized database queries.",
-      "Set up a cron job for data scraping engine using AWS Lambda, eliminating third-party API costs by $41,976 annually.",
-      "Orchestrated deployment pipeline with Docker containerization and AWS EC2 integration, resulting in 80% faster deployment cycles, 200% increased scaling capacity, and 99.9% service availability."
-    ],
-    skills: ["Node.js", "NestJS", "Docker", "AWS Lambda", "AWS EC2", "Cron Jobs", "Data Scraping"]
-  },
-  {
-    title: "Application Developer & Researcher",
-    company: "LAM²P Laboratory",
-    location: "Tampa, FL",
-    period: "Jan 2025 -- May 2025",
-    description: [
-      "Collaborate with PhDs student to develop an AI image classification system for visuals from 500+ research papers.",
-      "Engineered efficient data extraction pipeline using BeautifulSoup, OpenAI API, and pdfminer, cutting processing time from 4 hours to 10 minutes and boosting throughput by 20x.",
-      "Demonstrated technical capabilities with 97%+ accuracy in detecting hydrophobicity, supporting applications in medical surfaces and exploring commercialization opportunities across research institutions."
-    ],
-    skills: ["Python", "BeautifulSoup", "OpenAI API", "pdfminer", "AI Image Classification", "Data Extraction", "Machine Learning"]
-  },
-  {
-    title: "Software Engineer - Backend Intern",
-    company: "Wisdom Robotics",
-    location: "Remote, Vietnam",
-    period: "Oct 2024 -- Jan 2025",
-    description: [
-      "Developed 100% of the RESTful APIs using Spring Boot to manage order processing, tracking, and notifications.",
-      "Optimized the find-the-closest-driver algorithm by 90% (from O(n) to O(log n)) using MySQL indexing.",
-      "Integrated JavaMail API for real-time notifications and conducted API testing using Postman."
-    ],
-    skills: ["Spring Boot", "MySQL", "JavaMail API", "RESTful API", "Postman", "Algorithm Optimization", "Java"]
+    skills: ["Python", "Matplotlib", "Seaborn", "LLM APIs", "OpenAI", "Meta", "Anthropic", "Unit Testing"]
   }
 ];
 
@@ -240,31 +204,6 @@ export default function ExperiencePage() {
             </div>
           </AnimatedSection>
 
-          <AnimatedSection direction="up" delay={0.8}>
-            <div className="mt-16">
-              <h2 className="text-2xl font-bold mb-6">Leadership</h2>
-              <Card className="bg-card/60 backdrop-blur-sm border-border hover:shadow-lg hover:shadow-primary/10 transition-all duration-300">
-                <CardHeader>
-                  <div className="flex flex-col md:flex-row justify-between md:items-center gap-2">
-                    <div>
-                      <CardTitle className="text-xl">USF Association for Computing Machinery</CardTitle>
-                      <CardDescription className="text-muted-foreground">
-                        Sep 2024 - March 2025
-                      </CardDescription>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex items-start gap-2 group">
-                    <div className="h-2 w-2 rounded-full bg-primary mt-1.5 group-hover:scale-150 transition-transform"></div>
-                    <span className="text-muted-foreground group-hover:text-primary/80 transition-colors">
-                      Automated the email sending (4 hours to 14 minutes) & professor data scraping using Python Outlook.
-                    </span>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </AnimatedSection>
         </div>
       </section>
     </MainLayout>
