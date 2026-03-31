@@ -11,7 +11,7 @@ A modern portfolio website built with Next.js and Shadcn UI showcasing Khang Dan
   - About
   - Projects
   - Experience
-  - Achievements 
+  - Achievements
   - Contact
 
 ## Tech Stack
